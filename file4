@@ -1,0 +1,1 @@
+gcc -I"<java jdk directory>\.jdks\<jdk vender>\include" -I<java jdk directory>\.jdks\<jdk vender>\include\win32" -shared -o nativeLib.dll nativeLib.c
