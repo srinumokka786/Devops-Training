@@ -1,0 +1,16 @@
+public class JNIDemo {
+    // Declare the native method
+    public native int addNumbers(int a, int b);
+
+    // Load the library
+    static {
+        System.loadLibrary("nativeLib");
+    }
+    
+    // main class implementation
+    public static void main(String[] args) {
+        JNIDemo demo = new JNIDemo();
+        int result = demo.addNumbers(5, 7);
+        System.out.println("Result: " + result);
+    }
+}
