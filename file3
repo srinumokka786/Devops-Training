@@ -1,0 +1,6 @@
+#include <jni.h>
+#include "JNIDemo.h"
+
+JNIEXPORT jint JNICALL Java_JNIDemo_addNumbers(JNIEnv *env, jobject obj, jint a, jint b) {
+    return a + b;
+}
